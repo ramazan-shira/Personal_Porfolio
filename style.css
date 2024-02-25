@@ -1,0 +1,1435 @@
+/* Font family */
+body {
+  font-family: "Nunito", sans-serif;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  margin: 0;
+}
+
+/* Navigation bar style */
+.navbar {
+  width: 100%;
+  background-color: #fff;
+  height: 60px;
+  padding: 0 150px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  box-shadow: 0 4px 15px -5px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.tab a {
+  text-decoration: none;
+}
+
+.tab a:visited {
+  color: black;
+}
+
+.tab a:hover {
+  color: #38a3a5;
+}
+
+.burger-btn {
+  display: none;
+}
+
+#logo {
+  width: 40px;
+  height: 40px;
+}
+
+/* Main page style */
+.hero-container {
+  background-image: url(https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2023/07/computer-coding.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.hero-description {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 35%;
+  text-align: center;
+  color: white;
+}
+
+.hero-description h1 {
+  font-size: 60px;
+  margin-bottom: 5px;
+}
+
+.hero-description h4 {
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+/* My Bio */
+.about {
+  display: flex;
+  gap: 50px;
+  margin: 70px 150px;
+}
+
+.about-image img {
+  width: 100%;
+}
+
+.about-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#about-header {
+  width: 100%;
+  font-size: 56px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.bio-content {
+  width: 100%;
+  margin: 0;
+  color: #939393;
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+.panel-skill p {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.panel-skill input {
+  width: 100%;
+  color: #38a3a5;
+}
+
+input[type="range" i]:disabled {
+  color: #38a3a5;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.button-container button {
+  padding: 16px 20px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#download a {
+  color: white;
+  text-decoration: none;
+}
+
+#hire {
+  background-color: #38a3a5;
+}
+
+#hire:hover {
+  background-color: #319394;
+}
+
+#download {
+  background-color: #5c677d;
+}
+
+#download:hover {
+  background-color: #33415c;
+}
+
+/* My Portfolio */
+.portfolio-container {
+  width: 100%;
+  padding-bottom: 70px;
+}
+
+.myportfolio {
+  margin: 0 150px;
+}
+
+.portfolio-title {
+  width: 100%;
+  text-align: center;
+  font-size: 56px;
+  margin: 0 0 30px;
+  padding-top: 50px;
+}
+
+.portfolio-title p {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.portfolio-tabs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  font-size: 24px;
+  color: #939393;
+  margin-bottom: 20px;
+}
+
+.tabs-portfolio {
+  margin: 0;
+}
+
+.tabs-portfolio:hover {
+  cursor: pointer;
+  color: #38a3a5;
+}
+
+.portfolio-image {
+  width: 100%;
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.portfolio-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+
+.portfolio-column {
+  flex: 31%;
+  max-width: 31%;
+  padding: 0 10px;
+}
+
+/* Services */
+.services-container {
+  width: 100%;
+  padding-bottom: 70px;
+}
+
+.services {
+  margin: 0 150px;
+}
+
+.services-title {
+  font-size: 56px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 50px;
+}
+
+.services-title p {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.servicesCards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.services-card {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  gap: 10px;
+}
+
+.card-image {
+  margin-top: 32px;
+}
+
+.servicesCard-title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.servicesCard-content {
+  color: #b2a293;
+  font-size: 16px;
+  padding: 20px;
+  margin-top: 0;
+}
+
+/* Resume */
+.resume-container {
+  width: 100%;
+  padding-bottom: 70px;
+}
+
+.resume {
+  margin: 0 150px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-title p {
+  width: 100%;
+  font-size: 56px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.resume-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 70px;
+}
+
+.resume-image img {
+  width: 100%;
+}
+
+.resume-content-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.work-experience {
+  width: 100%;
+}
+
+.work-title,
+.education-title {
+  font-size: 36px;
+}
+
+.work-title {
+  margin: 0 0 20px;
+}
+
+.work {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #efefef;
+}
+
+.work:last-child {
+  margin-bottom: 0;
+}
+
+.work-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.work-position {
+  font-size: 20px;
+}
+
+.company {
+  display: flex;
+  gap: 10px;
+  color: #6c757d;
+  font-size: 16px;
+}
+
+.work-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.working-hours {
+  width: fit-content;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 7px 20px;
+  background: rgba(166, 188, 151, 0.1);
+  color: #38a3a5;
+  border-radius: 30px;
+}
+
+.working-period {
+  font-size: 16px;
+  color: #939393;
+}
+
+.education-profiles {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.education {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #efefef;
+}
+
+.education:last-child {
+  margin-bottom: 0;
+}
+
+.education-title {
+  margin: 48px 0 16px;
+}
+
+.profile-title {
+  font-size: 20px;
+}
+
+.education-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.education-right {
+  font-size: 16px;
+  color: #939393;
+}
+
+.university {
+  color: #6c757d;
+  font-size: 16px;
+}
+
+/* Happy Clients */
+.happy-clients-container {
+  width: 100%;
+  background-color: #f8f9fa;
+  padding-bottom: 70px;
+  padding-top: 50px;
+}
+
+.happy-clients {
+  margin: 0 150px;
+}
+
+.happy-clients-title {
+  font-size: 56px;
+  text-align: center;
+}
+
+.happy-clients-title p {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.review-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.reviewCard-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.reviewCard-image {
+  width: 70px;
+  display: flex;
+  align-items: first baseline;
+}
+
+.reviewCard-image img {
+  border: 5px solid white;
+  border-radius: 50%;
+  width: 70px;
+  box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.reviewCard-content {
+  margin: 0;
+  padding: 30px;
+  box-shadow: 0 2px 30px -2px rgba(0, 0, 0, 0.1);
+}
+
+.content-review {
+  margin: 0;
+}
+
+.content-review p {
+  margin: 0;
+  color: #939393;
+  margin-bottom: 16px;
+}
+
+cite {
+  color: #939393;
+}
+
+cite a {
+  color: #96bb7c;
+  text-decoration: none;
+}
+
+/* Contact me */
+.contacts-container {
+  width: 100%;
+  padding: 0;
+  padding-bottom: 70px;
+}
+
+.contacts {
+  margin: 0 150px;
+  padding-top: 50px;
+}
+
+.contact-title {
+  font-size: 56px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 100px;
+}
+
+.contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form label {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #939393;
+}
+
+.form-input {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 6px;
+  border: none;
+  border-bottom: 1px solid #43434d;
+  height: 45px;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.first-name {
+  flex: 0 0 46%;
+  max-width: 46%;
+}
+
+.last-name {
+  flex: 0 0 46%;
+  max-width: 46%;
+}
+
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #43434d;
+}
+
+.form-input:focus {
+  outline: none;
+  border-bottom: 1px solid #bae7e8;
+}
+
+.send-message {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: white;
+  background-color: #38a3a5;
+  border-radius: 20px;
+  border: none;
+}
+
+.send-message:hover {
+  background-color: #319394;
+}
+
+.contact-info-title {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.contactme {
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+
+.address,
+.phone,
+.email,
+.web {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-container {
+  padding: 50px 150px 20px 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #efefef;
+}
+
+.footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  background-color: #efefef;
+}
+
+.footer-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.footer-title p {
+  margin: 0;
+}
+
+.aboutme-footer p {
+  font-size: 16px;
+  color: #888a8e;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.connect p {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-instagram,
+.fa-facebook,
+.fa-twitter,
+.fa-linkedin,
+.fa-dribbble,
+.fa-pinterest {
+  background: #777;
+  color: white;
+}
+
+.navigation-tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.navigation-tab a {
+  font-size: 16px;
+  color: #888a8e;
+  text-decoration: none;
+}
+
+.services-tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.services-tab a {
+  font-size: 16px;
+  color: #888a8e;
+  text-decoration: none;
+}
+
+.contacts-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.contact-info {
+  font-size: 16px;
+  color: #888a8e;
+  text-decoration: none;
+}
+
+.contact-info a {
+  text-decoration: none;
+}
+
+.contact-info a span {
+  font-size: 16px;
+  color: #888a8e;
+  text-decoration: none;
+}
+
+.copyright {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.copyright p {
+  margin: 0;
+  font-size: 16px;
+  color: #888a8e;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+/* Responsive design */
+
+/* Extra large screens */
+@media screen and (max-width: 1200px) {
+  .navbar {
+    padding: 0 120px;
+  }
+
+  .tabs {
+    gap: 25px;
+  }
+
+  .about {
+    margin: 70px 120px;
+    flex-direction: column-reverse;
+  }
+
+  .myportfolio {
+    margin: 0 120px;
+  }
+
+  .portfolio-column {
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 7px;
+  }
+
+  .services {
+    margin: 0 120px;
+  }
+
+  .resume {
+    margin: 0 120px;
+  }
+
+  .resume-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .happy-clients {
+    margin: 0 120px;
+  }
+
+  .contacts {
+    margin: 0 120px;
+  }
+
+  .footer-container {
+    padding: 50px 120px 20px 120px;
+  }
+}
+
+/* Large Screen */
+@media screen and (max-width: 992px) {
+  .navbar {
+    padding: 0 100px;
+  }
+
+  .tabs {
+    gap: 20px;
+  }
+
+  .hero-container h1 {
+    font-size: 50px;
+  }
+
+  .hero-container h4 {
+    font-size: 20px;
+  }
+
+  .about {
+    margin: 0 100px;
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+
+  #about-header {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .about-content {
+    margin: 0;
+  }
+
+  .bio-content {
+    font-size: 16px;
+  }
+
+  .panel-skill p {
+    font-size: 16px;
+  }
+
+  .portfolio-title p {
+    font-size: 48px;
+  }
+
+  .tabs-portfolio {
+    font-size: 20px;
+  }
+
+  .myportfolio {
+    margin: 0 100px;
+  }
+
+  .services {
+    margin: 0 100px;
+  }
+
+  .services-title {
+    font-size: 48px;
+  }
+
+  .servicesCards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .resume {
+    margin: 0 100px;
+  }
+
+  .resume-title p {
+    font-size: 48px;
+  }
+
+  .work-left {
+    align-items: flex-start;
+  }
+
+  .work-title,
+  .education-title {
+    font-size: 32px;
+  }
+
+  .work-position {
+    font-size: 16px;
+  }
+
+  .company {
+    font-size: 14px;
+  }
+
+  .working-period {
+    font-size: 14px;
+  }
+
+  .education-right {
+    font-size: 14px;
+  }
+
+  .profile-title {
+    font-size: 16px;
+  }
+
+  .university {
+    font-size: 14px;
+  }
+
+  .happy-clients-title {
+    font-size: 48px;
+  }
+
+  .happy-clients {
+    margin: 0 100px;
+  }
+
+  .review-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contacts {
+    margin: 0 100px;
+  }
+
+  .contact-title {
+    font-size: 48px;
+  }
+
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .footer-title {
+    font-size: 16px;
+  }
+
+  .footer-container {
+    padding: 50px 100px 10px 100px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .footer-title {
+    margin-bottom: 10px;
+  }
+
+  .copyright {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+  }
+
+  .contact-content {
+    gap: 50px;
+  }
+
+  .contact-info {
+    gap: 10px;
+  }
+
+  .footer {
+    gap: 40px;
+  }
+
+  .navigation-tabs,
+  .services-tabs,
+  .contacts-info {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 30px;
+    justify-content: space-between;
+  }
+
+  .tabs {
+    display: none;
+  }
+
+  .burger-btn {
+    display: block;
+  }
+
+  .burger-btn:hover {
+    cursor: pointer;
+  }
+
+  .burger-btn img {
+    width: 40px;
+  }
+
+  .hero-description h1 {
+    font-size: 40px;
+  }
+
+  .hero-description h4 {
+    font-size: 16px;
+  }
+
+  .about {
+    margin: 0 60px;
+  }
+
+  #about-header {
+    font-size: 36px;
+  }
+
+  .button-container button {
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+
+  .myportfolio {
+    margin: 0 60px;
+  }
+
+  .portfolio-title p {
+    font-size: 36px;
+  }
+
+  .tabs-portfolio {
+    font-size: 16px;
+  }
+
+  .portfolio-column {
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 4px;
+  }
+
+  .tabs-portfolio {
+    font-size: 20px;
+  }
+
+  .portfolio-image {
+    margin-bottom: 20px;
+  }
+
+  .services {
+    margin: 0 60px;
+  }
+
+  .services-title {
+    font-size: 36px;
+  }
+
+  .servicesCards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .resume {
+    margin: 0 60px;
+  }
+
+  .resume-title p {
+    font-size: 36px;
+  }
+
+  .education-title {
+    margin-bottom: 20px;
+  }
+
+  .happy-clients {
+    margin: 0 60px;
+  }
+
+  .happy-clients-title {
+    font-size: 36px;
+  }
+
+  .contact-title {
+    font-size: 36px;
+  }
+
+  .send-message {
+    font-size: 16px;
+    padding: 13px 25px;
+  }
+
+  .contacts {
+    margin: 0 60px;
+  }
+
+  .footer-container {
+    padding-bottom: 0;
+  }
+
+  .footer-title {
+    margin-bottom: 10px;
+  }
+
+  .footer-title p {
+    margin: 0;
+  }
+
+  .connect {
+    padding-bottom: 20px;
+  }
+
+  .connect p {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .contact-content {
+    gap: 50px;
+  }
+
+  .contact-info {
+    gap: 10px;
+  }
+
+  .footer {
+    gap: 30px;
+  }
+
+  .navigation-tabs,
+  .services-tabs,
+  .contacts-info {
+    gap: 7px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .work {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .work-right {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .education {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero-description h1 {
+    font-size: 30px;
+  }
+
+  .hero-description h4 {
+    font-size: 14px;
+  }
+
+  .about {
+    margin: 0px 30px;
+  }
+
+  #about-header {
+    font-size: 32px;
+  }
+
+  .myportfolio {
+    margin: 0 30px;
+  }
+
+  .portfolio-title p {
+    font-size: 32px;
+  }
+
+  .portfolio-tabs {
+    display: none;
+  }
+
+  .tabs-portfolio {
+    font-size: 14px;
+  }
+
+  .portfolio-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .portfolio-image {
+    margin-bottom: 20px;
+  }
+
+  .services {
+    margin: 0 30px;
+  }
+
+  .services-title {
+    font-size: 32px;
+  }
+
+  .resume {
+    margin: 0 30px;
+  }
+
+  .resume-title p {
+    font-size: 32px;
+  }
+
+  .work {
+    flex-direction: column-reverse;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .work-left {
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .education {
+    flex-direction: column-reverse;
+  }
+
+  .education-title {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .happy-clients {
+    margin: 0 30px;
+  }
+
+  .happy-clients-title {
+    font-size: 32px;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .contact-title {
+    font-size: 32px;
+  }
+
+  .contacts {
+    margin: 0 30px;
+  }
+
+  .name {
+    width: calc(100%-20px);
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .first-name {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .last-name {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .copyright {
+    padding-top: 50px;
+  }
+
+  .footer-container {
+    padding: 50px 30px 20px 30px;
+  }
+
+  .footer-title {
+    margin-bottom: 10px;
+  }
+
+  .footer-title p {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 0 10px;
+  }
+
+  .about {
+    margin: 0 10px;
+  }
+
+  .myportfolio {
+    margin: 0 10px;
+  }
+
+  .portfolio-tabs {
+    display: none;
+  }
+
+  .portfolio-row {
+    padding: 0;
+  }
+
+  .portfolio-image {
+    margin-bottom: 10px;
+  }
+
+  .services {
+    margin: 0 10px;
+  }
+
+  .resume {
+    margin: 0 10px;
+  }
+
+  .work-title p {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .happy-clients {
+    margin: 0 10px;
+  }
+
+  .reviewCard-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .contacts {
+    margin: 0 10px;
+  }
+
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .contact-form {
+    padding: 0;
+  }
+
+  .form-input {
+    font-size: 14px;
+    padding: 0;
+    line-height: 1;
+  }
+
+  .send-message {
+    font-size: 14px;
+    padding: 12px 24px;
+  }
+
+  .footer-container {
+    padding: 50px 10px 0 10px;
+  }
+
+  .footer-title {
+    margin-bottom: 10px;
+  }
+
+  .footer-title p {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero-description h1 {
+    font-size: 18px;
+  }
+
+  .hero-description h4 {
+    font-size: 12px;
+  }
+
+  .work-right {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .form-input {
+    height: 20px;
+  }
+
+  .contact-content {
+    gap: 50px;
+  }
+
+  .contact-info {
+    gap: 10px;
+  }
+
+  .footer {
+    gap: 20px;
+  }
+
+  .navigation-tabs,
+  .services-tabs,
+  .contacts-info {
+    gap: 5px;
+  }
+}
