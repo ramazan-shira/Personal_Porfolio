@@ -35,6 +35,7 @@ body {
 
 .tab a {
   text-decoration: none;
+  color: black;
 }
 
 .tab a:visited {
