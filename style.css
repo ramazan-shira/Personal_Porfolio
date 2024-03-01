@@ -147,6 +147,12 @@ input[type="range" i]:disabled {
   font-size: 18px;
 }
 
+#hire a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
 #download a {
   color: white;
   text-decoration: none;
@@ -157,7 +163,7 @@ input[type="range" i]:disabled {
 }
 
 #hire:hover {
-  background-color: #319394;
+  background-color: #218b8d;
 }
 
 #download {
@@ -271,11 +277,19 @@ input[type="range" i]:disabled {
   line-height: 1.6;
 }
 
+.content-title:hover {
+  cursor: pointer;
+}
+
 .content {
   font-size: 25px;
   font-weight: 600;
   color: #98f5e1;
   line-height: 1.6;
+}
+
+.content:hover {
+  cursor: pointer;
 }
 
 /* Services */
@@ -1135,16 +1149,27 @@ textarea {
     margin-bottom: 10px;
   }
 
+  .portfolio-img:hover {
+    cursor: pointer;
+  }
+
   .content-title {
     font-size: 18px;
     font-weight: 600;
     line-height: 1.6;
   }
 
+  .content-title:hover {
+    cursor: pointer;
+  }
+
   .content {
     font-size: 14px;
     font-weight: 600;
     line-height: 1.6;
+  }
+  .content:hover {
+    cursor: pointer;
   }
 
   .services {
