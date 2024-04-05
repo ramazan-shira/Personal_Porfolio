@@ -6,14 +6,25 @@
   align-items: center;
   gap: 20px;
   padding: 20px;
+  background-color: white;
+  border-radius: 20px;
 }
 
-.tab {
+.tab:not(.active) {
   background-color: #f8f9f4;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.active {
+  background-color: #00b4d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
 button {
   width: 84px;
   height: 84px;
@@ -32,21 +43,11 @@ button {
 
 button:hover {
   background-color: #00b4d8;
-  color: white;
   cursor: pointer;
 }
 
-button:hover {
-  color: white;
-}
-
-.navtabs {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: white;
-  border-radius: 10px;
-  width: fit-content;
+.tab:hover {
+  background-color: #00b4d8;
 }
 
 .navbar {

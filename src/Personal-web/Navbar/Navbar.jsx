@@ -1,10 +1,13 @@
 import Navtabs from "./Navtabs.jsx";
 import "./navbar.css";
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <div className="navbar">
-      <Navtabs />
+      <Navtabs
+        setSelected={props.setSelected}
+        selectedTab={props.selectedTab}
+      />
     </div>
   );
 };

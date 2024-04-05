@@ -6,17 +6,20 @@ import Portfolio from "./Portfolio/Portfolio";
 import Services from "./Services/Services";
 import Contact from "./Contact/Contact";
 import Footer from "./Footer/Footer";
+import { useState } from "react";
 
 const Web = () => {
+  const [selectedTab, setSelected] = useState("about");
+
   return (
     <div className="personal-web-container">
-      <Navbar />
+      <Navbar setSelected={setSelected} selectedTab={selectedTab} />
       <div className="personal-web-content">
-        <About />
-        <Resume />
-        <Portfolio />
-        <Services />
-        <Contact />
+        {selectedTab === "about" && <About />}
+        {selectedTab === "resume" && <Resume />}
+        {selectedTab === "portfolio" && <Portfolio />}
+        {selectedTab === "services" && <Services />}
+        {selectedTab === "contact" && <Contact />}
         <Footer />
       </div>
     </div>
