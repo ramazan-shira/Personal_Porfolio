@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+.personal-info {
+  margin-top: 100px;
+  box-sizing: border-box;
+  padding: 30px;
+  background-color: white;
+  border-radius: 20px;
+  position: -webkit-sticky;
+  height: max-content;
+  display: block;
+}
+
+.personal-info img {
+  width: 200px;
+  border-radius: 20px;
+  margin-top: -40%;
+  margin-left: 25%;
+  margin: -30% 0 30px 25%;
+}
+
+.personal-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.photo img {
+  border: 1px solid grey;
+}
+
+.name {
+  font-size: 30px;
+  font-family: "Roboto Mono", monospace;
+  color: black;
+  font-weight: 700;
+  margin: 0;
+}
+
+.job {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "PT Serif", serif;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 4px 20px;
+  border-radius: 5px;
+  background-color: #f8f9f4;
+  text-align: center;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-media a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #f8f9f4;
+  border-radius: 8px;
+}
+
+.social-media a:hover {
+  background-color: #00b4d8;
+  color: white;
+  .fa-facebook-f,
+  .fa-instagram,
+  .fa-github,
+  .fa-linkedin-in,
+  .fa-folder-closed {
+    color: white;
+  }
+}
+
+.social-media a i:hover {
+  color: white;
+}
+
+.social-media a i {
+  font-size: 26px;
+}
+
+.fa-facebook-f {
+  color: #1773ea;
+}
+
+.fa-instagram {
+  color: #e12a72;
+}
+
+.fa-linkedin-in {
+  color: #144679;
+}
+
+.fa-github {
+  color: #5b6260;
+}
+
+.fa-folder-closed {
+  color: #0c9d74;
+}
+
+.info {
+  box-sizing: border-box;
+  padding: 30px;
+  background-color: #f8f9f4;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.my-info {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.personal-info-icon {
+  height: 44px;
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.personal-info-icon:hover {
+  background-color: #00b4d8;
+  .fa-mobile,
+  .fa-location-dot,
+  .fa-envelope-open-text,
+  .fa-earth-europe {
+    color: white;
+  }
+}
+
+.personal-info-icon i {
+  font-size: 22px;
+}
+
+.fa-mobile,
+.fa-location-dot {
+  color: #74c0fc;
+}
+
+.fa-envelope-open-text,
+.fa-earth-europe {
+  color: #63e6be;
+}
+
+.personal-info-data {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: "Merriweather", serif;
+}
+
+.personal-info-title {
+  font-size: 14px;
+  margin: 0;
+}
+
+.personal-info-content {
+  font-size: 16px;
+  margin: 0;
+}
+
+.personal-info-content a {
+  color: black;
+  text-decoration: none;
+}
+
+.download-cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Merriweather", serif;
+}
+
+.cv a {
+  text-decoration: none;
+}
+
+.cv {
+  text-decoration: none;
+  padding: 15px;
+  color: white;
+  background-color: #00b4d8;
+  border-radius: 10px;
+  border: 1px solid white;
+  font-size: 18px;
+  font-weight: 700;
+}

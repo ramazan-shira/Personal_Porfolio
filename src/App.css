@@ -1,0 +1,14 @@
+.container {
+  box-sizing: border-box;
+  padding: 70px;
+  background-image: url("./Assets/Images/light-bg.jpeg");
+  background-position: 50%;
+  background-size: cover;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  padding: 70px 0;
+}

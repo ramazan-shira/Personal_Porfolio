@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap");
+
+.tabs {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.tab {
+  background-color: #f8f9f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  width: 84px;
+  height: 84px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
+  border: none;
+  color: #44566c;
+}
+
+button:hover {
+  background-color: #00b4d8;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  color: white;
+}
+
+.navtabs {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  width: 100%;
+}

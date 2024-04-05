@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bree+Serif&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Permanent+Marker&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rakkas&family=Righteous&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap");
+.skills {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.skills h2 {
+  font-family: "Rakkas", serif;
+  font-size: 26px;
+}
+
+.progress-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+
+.bar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.bar-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Arvo", serif;
+}
+
+.bar-title p {
+  margin: 0;
+}
+
+.skill,
+.progress {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Arvo", serif;
+}
+
+.bar-progress {
+  width: 100%;
+}
+
+.bar-progress input {
+  width: 100%;
+}
+
+.bg-1 {
+  accent-color: #f95738;
+}
+
+.bg-2 {
+  accent-color: #8b63a5;
+}
+
+.bg-3 {
+  accent-color: #05668d;
+}
+
+.bg-4 {
+  accent-color: #9cccdf;
+}
