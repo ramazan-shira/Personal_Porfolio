@@ -10,7 +10,7 @@ const Tab = (props) => {
       className={`tab ${props.active && "active"}`}
       onClick={handleTabClick}
     >
-      <i class={props.icon}></i>
+      <i className={props.icon}></i>
       <span>{props.title}</span>
     </button>
   );

@@ -4,7 +4,7 @@ const Downloadcv = () => {
   return (
     <div className="download-cv">
       <a className="cv" href={CV} download>
-        <i class="fa-solid fa-download"></i> Download CV
+        <i className="fa-solid fa-download"></i> Download CV
       </a>
     </div>
   );

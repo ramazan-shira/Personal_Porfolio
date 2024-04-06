@@ -3,53 +3,58 @@ const Info = () => {
     <div className="info">
       <div className="my-info">
         <div className="personal-info-icon">
-          <i class="fa-solid fa-mobile"></i>
+          <i className="fa-solid fa-mobile"></i>
         </div>
         <div className="personal-info-data">
           <p className="personal-info-title">Phone</p>
           <p className="personal-info-content">
-            <a href="tel://11234567890" class="d-flex contactme">
-              <span class="contactme">+355(68)-608-1940</span>
+            <a href="tel://11234567890" className="d-flex contactme">
+              <span className="contactme">+355(68)-608-1940</span>
             </a>
           </p>
         </div>
       </div>
       <div className="my-info">
         <div className="personal-info-icon">
-          <i class="fa-solid fa-envelope-open-text"></i>
+          <i className="fa-solid fa-envelope-open-text"></i>
         </div>
         <div className="personal-info-data">
           <p className="personal-info-title">Email</p>
           <p className="personal-info-content">
-            <a href="mailto:ramazanshira1@gmail.com" class="d-flex contactme">
-              <span class="contactme">ramazanshira1@gmail.com</span>
+            <a
+              href="mailto:ramazanshira1@gmail.com"
+              className="d-flex contactme"
+            >
+              <span className="contactme">ramazanshira1@gmail.com</span>
             </a>
           </p>
         </div>
       </div>
       <div className="my-info">
         <div className="personal-info-icon">
-          <i class="fa-solid fa-location-dot"></i>
+          <i className="fa-solid fa-location-dot"></i>
         </div>
         <div className="personal-info-data">
           <p className="personal-info-title">Location</p>
           <p className="personal-info-content">
-            <span class="contactme">Tirana, Albania</span>
+            <span className="contactme">Tirana, Albania</span>
           </p>
         </div>
       </div>
       <div className="my-info">
         <div className="personal-info-icon">
-          <i class="fa-solid fa-earth-europe"></i>
+          <i className="fa-solid fa-earth-europe"></i>
         </div>
         <div className="personal-info-data">
           <p className="personal-info-title">Website</p>
           <p className="personal-info-content">
             <a
               href="https://ramazanshira.netlify.app/"
-              class="d-flex contactme"
+              className="d-flex contactme"
             >
-              <span class="contactme">https://ramazanshira.netlify.app/</span>
+              <span className="contactme">
+                https://ramazanshira.netlify.app/
+              </span>
             </a>
           </p>
         </div>
