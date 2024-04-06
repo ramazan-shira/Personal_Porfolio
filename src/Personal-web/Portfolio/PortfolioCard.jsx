@@ -21,7 +21,7 @@ const PortfolioCard = () => {
           </a>
         </div>
 
-        <div className="card bg-2">
+        <div className="card bg-2 long">
           <a href="https://tasteit-restaurant.netlify.app/">
             <img src={tasteIt} alt="Taste It" />
           </a>
@@ -53,7 +53,7 @@ const PortfolioCard = () => {
       </div>
 
       <div className="portfolio-cards-container-column2">
-        <div className="card bg-2">
+        <div className="card bg-2 long">
           <a href="https://rsh-todolist.netlify.app/">
             <img src={toDoList} alt="To Do List" />
           </a>
@@ -74,7 +74,7 @@ const PortfolioCard = () => {
           </a>
         </div>
 
-        <div className="card bg-2">
+        <div className="card bg-2 long">
           <a href="https://rsh-guess-number.netlify.app/">
             <img src={guessNr} alt="Guess Number" />
           </a>

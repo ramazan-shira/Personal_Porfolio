@@ -72,19 +72,19 @@ textarea:focus {
   border-bottom: 2px solid #00b4d8;
 }
 
-#submit {
+.contact-form button {
+  height: auto;
   padding: 12px 25px;
   background-color: transparent;
   font-size: 18px;
   font-family: "Arvo", serif;
-
   font-weight: 700;
   width: max-content;
   border-radius: 10px;
   border: 1px solid #44566c;
 }
 
-#submit {
+.contact-form button:hover {
   background-color: #00b4d8;
   color: white;
   cursor: pointer;

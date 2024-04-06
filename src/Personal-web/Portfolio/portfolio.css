@@ -78,6 +78,10 @@
   margin-bottom: 10px;
 }
 
+.long img {
+  height: 200px;
+}
+
 .card img:hover {
   transform: scale(1.1);
   transition: 0.5s all ease-in-out;

@@ -34,7 +34,7 @@ const Info = () => {
         <div className="personal-info-data">
           <p className="personal-info-title">Location</p>
           <p className="personal-info-content">
-            <span class="contactme">Kamez, Tirana, Albania</span>
+            <span class="contactme">Tirana, Albania</span>
           </p>
         </div>
       </div>
