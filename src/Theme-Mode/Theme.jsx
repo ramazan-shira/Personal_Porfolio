@@ -1,9 +1,21 @@
 import "./theme.css";
-import nightmode from "../Assets/Images/dark-mode.png";
-const Theme = () => {
+import { useState } from "react";
+
+const Theme = (props) => {
+  const { theme, setTheme } = props;
+  const changeTheme = () => {
+    setTheme(!theme);
+  };
+
   return (
     <div className="theme">
-      <img src={nightmode} alt="nigh mode icon" />
+      <button onClick={changeTheme}>
+        <i
+          className={
+            theme ? "sunicon fa-regular fa-sun" : "moonicon fa-solid fa-moon"
+          }
+        ></i>
+      </button>
     </div>
   );
 };
