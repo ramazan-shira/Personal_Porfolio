@@ -1,15 +1,17 @@
 import WorkExpCards from "./WorkExpCards";
 import "./experience.css";
 import work from "../../../Assets/Images/work.png";
+import "./experienceDark.css";
 
-const WorkExp = () => {
+const WorkExp = (props) => {
+  const { darkMode } = props;
   return (
     <div className="work-exp">
-      <div className="work-title">
+      <div className={darkMode ? "work-title dark" : "work-title"}>
         <img src={work} alt="Work Experience" />
         <h2>Experience</h2>
       </div>
-      <WorkExpCards />
+      <WorkExpCards darkMode={darkMode} />
     </div>
   );
 };

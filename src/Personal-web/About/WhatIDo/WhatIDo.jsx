@@ -1,10 +1,11 @@
 import "./whatIDo.css";
 import WhatIDoCards from "./WhatIDoCards";
 
-const WhatIDo = () => {
+const WhatIDo = (props) => {
+  const { darkMode } = props;
   return (
     <div className="what-do">
-      <WhatIDoCards />
+      <WhatIDoCards darkMode={darkMode} />
     </div>
   );
 };

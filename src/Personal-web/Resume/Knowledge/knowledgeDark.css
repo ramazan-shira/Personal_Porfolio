@@ -1,0 +1,12 @@
+.knowledge.dark h2 {
+  color: white;
+}
+
+.resume-skills.dark {
+  background-color: #0d0d0d;
+}
+
+.knowledge-card.dark span {
+  background-color: #1c1c1c;
+  color: #a6a6a6;
+}

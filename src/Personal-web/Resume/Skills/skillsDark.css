@@ -1,0 +1,9 @@
+.skills.dark h2 {
+  color: white;
+}
+
+.bar.dark .bar-title,
+.bar.dark .skill,
+.bar.dark .progress {
+  color: #a6a6a6;
+}

@@ -116,7 +116,7 @@
 .info {
   box-sizing: border-box;
   padding: 30px;
-  background-color: #f8f9f4;
+  background-color: #f3f6f6;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -160,14 +160,19 @@
   font-size: 22px;
 }
 
-.fa-mobile,
-.fa-location-dot {
-  color: #74c0fc;
+.fa-mobile {
+  color: #e93b81;
 }
 
-.fa-envelope-open-text,
+.fa-location-dot {
+  color: #00b4d8;
+}
+
+.fa-envelope-open-text {
+  color: #6ab5b9;
+}
 .fa-earth-europe {
-  color: #63e6be;
+  color: #c17ceb;
 }
 
 .personal-info-data {
@@ -209,7 +214,11 @@
   color: white;
   background-color: #00b4d8;
   border-radius: 10px;
-  border: 1px solid white;
   font-size: 18px;
   font-weight: 700;
+  transition: all 0.4s ease-in-out;
+}
+
+.cv:hover {
+  transform: translateY(-3px);
 }

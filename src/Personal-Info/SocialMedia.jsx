@@ -1,8 +1,12 @@
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./personalinfo.css";
-const SocialMedia = () => {
+import "./personalInfoDark.css";
+
+const SocialMedia = (props) => {
+  const { darkMode } = props;
+
   return (
-    <div className="social-media">
+    <div className={darkMode ? "social-media dark" : "social-media"}>
       <a href="https://www.facebook.com/zani.shira.3">
         <i className="fa-brands fa-facebook-f"></i>
       </a>

@@ -1,6 +1,9 @@
 import Tab from "./Tab";
+import "./navbarDark.css";
 
 const Navtabs = (props) => {
+  const { darkMode } = props;
+
   const tabs = [
     {
       name: "About",
@@ -30,7 +33,7 @@ const Navtabs = (props) => {
   ];
 
   return (
-    <div className="tabs">
+    <div className={darkMode ? "tabs dark" : "tabs"}>
       {tabs.map((tab) => (
         <Tab
           key={tab.id}
@@ -39,6 +42,7 @@ const Navtabs = (props) => {
           icon={tab.icon}
           setSelected={props.setSelected}
           active={props.selectedTab === tab.id}
+          darkMode={darkMode}
         />
       ))}
     </div>

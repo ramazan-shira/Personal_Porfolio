@@ -1,7 +1,14 @@
+body {
+  background-image: url("./Assets/Images/light-bg.jpeg");
+}
+
+.darkBg {
+  background-image: url("./Assets/Images/dark-bg.jpeg");
+}
+
 .container {
   box-sizing: border-box;
   padding: 70px;
-  background-image: url("./Assets/Images/light-bg.jpeg");
   background-position: 50%;
   background-size: cover;
 }

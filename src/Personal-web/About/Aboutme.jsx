@@ -1,7 +1,10 @@
 import "./about.css";
-const Aboutme = () => {
+import "./aboutDark.css";
+const Aboutme = (props) => {
+  const { darkMode } = props;
+
   return (
-    <div className="aboutme">
+    <div className={darkMode ? "aboutme dark" : "aboutme"}>
       <h1>About</h1>
       <p>
         I am a Web Developer fueled by a passion for creating captivating online

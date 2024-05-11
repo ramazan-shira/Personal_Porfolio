@@ -4,14 +4,17 @@ import MyPhoto from "./MyPhoto";
 import Name from "./Name";
 import SocialMedia from "./SocialMedia";
 import "./personalinfo.css";
+import "./personalInfoDark.css";
 
-const PersonalInfo = () => {
+const PersonalInfo = (props) => {
+  const { darkMode } = props;
+
   return (
-    <div className="personal-info">
+    <div className={darkMode ? "personal-info dark" : "personal-info"}>
       <MyPhoto />
-      <Name />
-      <SocialMedia />
-      <Info />
+      <Name darkMode={darkMode} />
+      <SocialMedia darkMode={darkMode} />
+      <Info darkMode={darkMode} />
       <Downloadcv />
     </div>
   );

@@ -1,10 +1,13 @@
 import SkillsBar from "./SkillsBar";
 import "./skills.css";
-const Skills = () => {
+import "./skillsDark.css";
+
+const Skills = (props) => {
+  const { darkMode } = props;
   return (
-    <div className="skills">
+    <div className={darkMode ? "skills dark" : "skills"}>
       <h2>Working Skills</h2>
-      <SkillsBar />
+      <SkillsBar darkMode={darkMode} />
     </div>
   );
 };

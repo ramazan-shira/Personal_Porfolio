@@ -1,11 +1,13 @@
 import KnowledgeCards from "./KnowledgeCards";
 import "./knowledge.css";
+import "./knowledgeDark.css";
 
-const Knowledge = () => {
+const Knowledge = (props) => {
+  const { darkMode } = props;
   return (
-    <div className="knowledge">
+    <div className={darkMode ? "knowledge dark" : "knowledge"}>
       <h2>Knowledges</h2>
-      <KnowledgeCards />
+      <KnowledgeCards darkMode={darkMode} />
     </div>
   );
 };

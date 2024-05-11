@@ -1,18 +1,33 @@
 import "./education.css";
-const EducationCards = () => {
+import "./educationDark.css";
+
+const EducationCards = (props) => {
+  const { darkMode } = props;
   return (
     <div className="education-cards">
-      <div className="education-card bg-1">
+      <div
+        className={
+          darkMode ? "education-card bg-1 dark" : "education-card bg-1 "
+        }
+      >
         <p className="period">2022 - 2024</p>
         <p className="profile">MSC Information Systems in Economics</p>
         <p className="institution">University of Tirana</p>
       </div>
-      <div className="education-card bg-2">
+      <div
+        className={
+          darkMode ? "education-card bg-2 dark" : "education-card bg-2 "
+        }
+      >
         <p className="period">2019 - 2022</p>
         <p className="profile">Bachelor in Business - Informatics</p>
         <p className="institution">University of Tirana</p>
       </div>
-      <div className="education-card bg-1">
+      <div
+        className={
+          darkMode ? "education-card bg-1 dark" : "education-card bg-1 "
+        }
+      >
         <p className="period">2023</p>
         <p className="profile">Web Developer</p>
         <p className="institution">Tirana ICT Academy</p>

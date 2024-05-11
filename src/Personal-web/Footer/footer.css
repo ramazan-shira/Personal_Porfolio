@@ -7,8 +7,16 @@
   background-color: aliceblue;
 }
 
+.footer.dark {
+  background-color: black;
+}
+
 .footer p {
   margin: 0;
   font-size: 18px;
   font-family: "Crete Round", serif;
+}
+
+.footer.dark p {
+  color: #a6a6a6;
 }

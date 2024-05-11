@@ -1,0 +1,58 @@
+.personal-info.dark {
+  background-color: black;
+}
+
+.name.dark {
+  color: white;
+}
+
+.job.dark {
+  background-color: #1d1d1d;
+  color: #a6a6a6;
+}
+
+.social-media.dark a {
+  background-color: #1d1d1d;
+}
+
+.social-media.dark a:hover {
+  background-color: #00b4d8;
+  color: white;
+  .fa-facebook-f,
+  .fa-instagram,
+  .fa-github,
+  .fa-linkedin-in,
+  .fa-folder-closed {
+    color: white;
+  }
+}
+
+.info.dark {
+  background-color: #1d1d1d;
+}
+
+.my-info.dark {
+  border-bottom: 1px solid #333333;
+}
+
+.personal-info-icon.dark {
+  background-color: black;
+}
+
+.personal-info-icon.dark:hover {
+  background-color: #00b4d8;
+  .fa-mobile,
+  .fa-location-dot,
+  .fa-envelope-open-text,
+  .fa-earth-europe {
+    color: white;
+  }
+}
+
+.personal-info-content.dark a {
+  color: white;
+}
+
+.personal-info-data.dark {
+  color: white;
+}

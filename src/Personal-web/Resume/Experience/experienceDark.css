@@ -1,0 +1,21 @@
+.exp-card.dark {
+  border: 1px solid #353535;
+}
+
+.work-title.dark h2 {
+  color: white;
+}
+
+.exp-card.bg-1.dark,
+.exp-card.bg-2.dark {
+  background-color: black;
+}
+
+.exp-card.dark .period,
+.exp-card.dark .company {
+  color: #a6a6a6a6;
+}
+
+.exp-card.dark .position {
+  color: white;
+}

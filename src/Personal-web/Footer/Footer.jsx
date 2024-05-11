@@ -1,7 +1,9 @@
 import "./footer.css";
-const Footer = () => {
+const Footer = (props) => {
+  const { darkMode } = props;
+
   return (
-    <div className="footer">
+    <div className={darkMode ? "footer dark" : "footer"}>
       <p>
         &copy; Copyright <strong>Ramazan Shira</strong> All rights reserved
       </p>

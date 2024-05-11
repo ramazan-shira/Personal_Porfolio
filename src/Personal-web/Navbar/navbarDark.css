@@ -1,0 +1,29 @@
+.tabs.dark {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.tab:not(.active).dark {
+  background-color: #212425;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.tab.dark {
+  color: #a6a6a6;
+}
+
+button.tab.active.dark {
+  color: white;
+}
+
+button.tab.dark:hover {
+  background-color: #00b4d8;
+  color: white;
+}

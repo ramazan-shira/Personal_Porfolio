@@ -1,14 +1,17 @@
 import EducationCards from "./EducationCards";
 import education from "../../../Assets/Images/education.png";
+import "./educationDark.css";
 
-const Education = () => {
+const Education = (props) => {
+  const { darkMode } = props;
+
   return (
     <div className="education">
-      <div className="education-title">
+      <div className={darkMode ? "education-title dark" : "education-title"}>
         <img src={education} alt="Education" />
         <h2>Education</h2>
       </div>
-      <EducationCards />
+      <EducationCards darkMode={darkMode} />
     </div>
   );
 };

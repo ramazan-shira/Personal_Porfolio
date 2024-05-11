@@ -1,0 +1,16 @@
+.about-card.dark {
+  border: 1px solid #353535;
+}
+
+.bg-1.dark,
+.bg-2.dark {
+  background-color: black;
+}
+
+.about-card-content.dark .about-card-title {
+  color: white;
+}
+
+.about-card-content.dark {
+  color: #a6a6a6;
+}

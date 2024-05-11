@@ -19,7 +19,7 @@ const Theme = (props) => {
   }, [setDarkMode]);
 
   return (
-    <div className="theme">
+    <div className={darkMode ? "theme dark" : "theme"}>
       <button onClick={handleTheme}>
         <i
           className={
