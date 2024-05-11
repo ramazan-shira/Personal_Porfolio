@@ -1,11 +1,13 @@
 import PersonalInfo from "./Personal-Info/PersonalInfo";
 import PersonalWeb from "./Personal-web/Web";
 
-const Content = () => {
+const Content = (props) => {
+  const { darkMode } = props;
+
   return (
     <div className="content">
-      <PersonalInfo />
-      <PersonalWeb />
+      <PersonalInfo darkMode={darkMode} />
+      <PersonalWeb darkMode={darkMode} />
     </div>
   );
 };

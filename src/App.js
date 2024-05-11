@@ -4,11 +4,11 @@ import Content from "./Content";
 import Theme from "./Theme-Mode/Theme";
 import { useState } from "react";
 function App() {
-  const [theme, setTheme] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
   return (
     <div className="container">
-      <Theme theme={theme} setTheme={setTheme} />
-      <Content theme={theme} />
+      <Theme darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Content darkMode={darkMode} />
     </div>
   );
 }
