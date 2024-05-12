@@ -17,6 +17,10 @@
   align-items: center;
 }
 
+button.tab.active {
+  background-color: #00b4d8;
+}
+
 .active {
   background-color: #00b4d8;
   display: flex;
