@@ -5,7 +5,8 @@ const Footer = (props) => {
   return (
     <div className={darkMode ? "footer dark" : "footer"}>
       <p>
-        &copy; Copyright <strong>Ramazan Shira</strong> All rights reserved
+        &copy; Copyright <strong>Ramazan Shira</strong>
+        <br /> All rights reserved
       </p>
     </div>
   );

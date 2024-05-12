@@ -11,19 +11,6 @@
   font-size: 42px;
 }
 
-.portfolio h1::after {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 3px;
-  background-color: #00b4d8;
-  left: 57%;
-  top: 67%;
-  transform: translatey(-50%);
-  border-radius: 5px;
-  margin-bottom: 30px;
-}
-
 .portfolio-tabs {
   display: flex;
   justify-content: flex-end;
@@ -101,4 +88,59 @@ a .title {
   font-size: 18px;
   font-weight: 600;
   margin: 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .portfolio h1::after {
+    left: 64%;
+    top: 65%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .portfolio-cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .portfolio-cards-container-column1,
+  .portfolio-cards-container-column2 {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .portfolio-cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .portfolio-cards-container-column1,
+  .portfolio-cards-container-column2 {
+    gap: 30px;
+  }
+
+  .portfolio-tabs {
+    flex-wrap: wrap;
+    row-gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .portfolio-tabs p {
+    margin: 0;
+  }
 }

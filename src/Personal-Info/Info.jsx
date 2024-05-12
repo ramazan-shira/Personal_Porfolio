@@ -53,7 +53,7 @@ const Info = (props) => {
               href="mailto:ramazanshira1@gmail.com"
               className="d-flex contactme"
             >
-              <span className="contactme">ramazanshira1@gmail.com</span>
+              <span className="contactme email">ramazanshira1@gmail.com</span>
             </a>
           </p>
         </div>
@@ -104,7 +104,7 @@ const Info = (props) => {
               href="https://ramazanshira.netlify.app/"
               className="d-flex contactme"
             >
-              <span className="contactme">
+              <span className="contactme website">
                 https://ramazanshira.netlify.app/
               </span>
             </a>

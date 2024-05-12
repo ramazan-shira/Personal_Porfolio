@@ -45,6 +45,9 @@ const Navtabs = (props) => {
           darkMode={darkMode}
         />
       ))}
+      {/* <button className="menu-icon">
+        <i className="fa fa-bars"></i>
+      </button> */}
     </div>
   );
 };

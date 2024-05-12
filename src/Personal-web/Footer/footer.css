@@ -20,3 +20,9 @@
 .footer.dark p {
   color: #a6a6a6;
 }
+
+@media screen and (max-width: 600px) {
+  .footer {
+    text-align: center;
+  }
+}

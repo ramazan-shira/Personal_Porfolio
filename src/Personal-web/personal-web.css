@@ -15,3 +15,22 @@
   background-color: white;
   border-radius: 20px;
 }
+
+@media screen and (max-width: 1300px) {
+  .personal-web-content {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .personal-web-container {
+    position: static;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .personal-web-content {
+    padding: 30px;
+  }
+}

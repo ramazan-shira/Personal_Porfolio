@@ -63,3 +63,9 @@
   font-weight: 400;
   margin: 0;
 }
+
+@media screen and (max-width: 1024px) {
+  .education {
+    width: 100%;
+  }
+}

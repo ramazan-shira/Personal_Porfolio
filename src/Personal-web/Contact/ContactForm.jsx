@@ -6,9 +6,10 @@ const ContactForm = (props) => {
 
   return (
     <div className={darkMode ? "contact-me dark" : "contact-me"}>
-      <p>Open to exploring opportunities for </p>
-      <h2>product design collaborations or partnerships.</h2>
-
+      <p>
+        Open to exploring opportunities for product design collaborations or
+        partnerships.
+      </p>
       <form className={darkMode ? "contact-form dark" : "contact-form"}>
         <input type="text" placeholder="Name" />
         <input type="email" placeholder="Email" />

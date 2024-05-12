@@ -4,19 +4,6 @@
   font-size: 42px;
 }
 
-.services h1::after {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 3px;
-  background-color: #00b4d8;
-  left: 56%;
-  top: 67.5%;
-  transform: translatey(-50%);
-  border-radius: 5px;
-  margin-bottom: 30px;
-}
-
 .services h1 {
   margin-bottom: 20px;
 }
@@ -61,4 +48,40 @@
   margin: 0;
   font-size: 18px;
   text-align: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .services h1::after {
+    left: 63%;
+    top: 65%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cards-container {
+    display: grid;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cards-container {
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .cards-container {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
 }

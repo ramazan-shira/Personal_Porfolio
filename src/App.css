@@ -5,6 +5,12 @@ body {
 }
 
 .darkBg {
+  /* background: linear-gradient(
+    112.1deg,
+    rgb(32, 38, 57) 11.4%,
+    rgb(63, 76, 119) 70.2%
+  ); */
+
   background-image: url("./Assets/Images/dark-bg.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -13,13 +19,48 @@ body {
 .container {
   box-sizing: border-box;
   padding: 70px 100px;
-  background-position: 50%;
-  background-size: cover;
 }
 
 .content {
-  display: grid;
-  grid-template-columns: 1fr 2.5fr;
+  display: flex;
+  justify-content: center;
   gap: 30px;
   padding: 70px 0 0 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    padding: 70px 70px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .container {
+    padding: 70px 120px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    padding: 70px 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 70px 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 70px 30px;
+  }
 }

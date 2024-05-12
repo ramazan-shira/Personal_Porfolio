@@ -222,3 +222,47 @@
 .cv:hover {
   transform: translateY(-3px);
 }
+
+@media screen and (max-width: 1300px) {
+  .personal-info {
+    padding: 30px;
+  }
+
+  .info {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .personal-info-title {
+    font-size: 12px;
+  }
+
+  .personal-info-content {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .personal-info {
+    position: static;
+    width: 100%;
+    padding: 70px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .personal-info {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .website {
+    font-size: 10px;
+  }
+
+  .email {
+    font-size: 12px;
+  }
+}

@@ -60,3 +60,9 @@
   font-size: 18px;
   font-weight: 400;
 }
+
+@media screen and (max-width: 1024px) {
+  .work-exp {
+    width: 100%;
+  }
+}
