@@ -1,10 +1,12 @@
 import PortfolioCard from "./PortfolioCard";
 import "./portfolio.css";
 
-const PortfolioCards = () => {
+const PortfolioCards = (props) => {
+  const { darkMode } = props;
+
   return (
     <div className="portfolio-cards">
-      <PortfolioCard />
+      <PortfolioCard darkMode={darkMode} />
     </div>
   );
 };

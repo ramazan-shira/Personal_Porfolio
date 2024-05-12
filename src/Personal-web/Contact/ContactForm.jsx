@@ -1,9 +1,15 @@
 import "./contact.css";
+import "./contactDark.css";
 
-const ContactForm = () => {
+const ContactForm = (props) => {
+  const { darkMode } = props;
+
   return (
-    <div className="contact-me">
-      <form className="contact-form">
+    <div className={darkMode ? "contact-me dark" : "contact-me"}>
+      <p>Open to exploring opportunities for </p>
+      <h2>product design collaborations or partnerships.</h2>
+
+      <form className={darkMode ? "contact-form dark" : "contact-form"}>
         <input type="text" placeholder="Name" />
         <input type="email" placeholder="Email" />
         <textarea placeholder="Message" color="30" rows="1"></textarea>

@@ -1,21 +1,25 @@
 body {
   background-image: url("./Assets/Images/light-bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .darkBg {
   background-image: url("./Assets/Images/dark-bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container {
   box-sizing: border-box;
-  padding: 70px;
+  padding: 70px 100px;
   background-position: 50%;
   background-size: cover;
 }
 
 .content {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2.5fr;
   gap: 30px;
-  padding: 70px 0;
+  padding: 70px 0 0 0;
 }

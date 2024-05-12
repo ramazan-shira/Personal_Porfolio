@@ -6,12 +6,15 @@ import addMembers from "../../Assets/Images/add-members.png";
 import llotoB from "../../Assets/Images/llotob.png";
 import guessNr from "../../Assets/Images/guess-nr.png";
 import rollDice from "../../Assets/Images/roll-dice.png";
+import "./portfolioDark.css";
 
-const PortfolioCard = () => {
+const PortfolioCard = (props) => {
+  const { darkMode } = props;
+
   return (
     <div className="portfolio-cards-container">
       <div className="portfolio-cards-container-column1">
-        <div className="card bg-1">
+        <div className={darkMode ? "card bg-1 dark" : "card bg-1"}>
           <a href="https://ramazanshira.netlify.app/">
             <img src={personalPortfolio} alt="Personal Portfolio website" />
           </a>
@@ -21,7 +24,7 @@ const PortfolioCard = () => {
           </a>
         </div>
 
-        <div className="card bg-2 long">
+        <div className={darkMode ? "card bg-2 dark" : "card bg-2"}>
           <a href="https://tasteit-restaurant.netlify.app/">
             <img src={tasteIt} alt="Taste It" />
           </a>
@@ -31,7 +34,7 @@ const PortfolioCard = () => {
           </a>
         </div>
 
-        <div className="card bg-1">
+        <div className={darkMode ? "card bg-1 dark" : "card bg-1"}>
           <a href="https://addusers-app.netlify.app/">
             <img src={addMembers} alt="Add Members" />
           </a>
@@ -41,7 +44,7 @@ const PortfolioCard = () => {
           </a>
         </div>
 
-        <div className="card bg-2">
+        <div className={darkMode ? "card bg-2 dark" : "card bg-2"}>
           <a href="https://rsh-roll-dice.netlify.app/">
             <img src={rollDice} alt="Roll Dice" />
           </a>
@@ -53,7 +56,7 @@ const PortfolioCard = () => {
       </div>
 
       <div className="portfolio-cards-container-column2">
-        <div className="card bg-2 long">
+        <div className={darkMode ? "card bg-2 long dark" : "card bg-2"}>
           <a href="https://rsh-todolist.netlify.app/">
             <img src={toDoList} alt="To Do List" />
           </a>
@@ -64,7 +67,7 @@ const PortfolioCard = () => {
           </a>
         </div>
 
-        <div className="card bg-1">
+        <div className={darkMode ? "card bg-1 dark" : "card bg-1"}>
           <a href="https://llotob-app.netlify.app/">
             <img src={llotoB} alt="Lloto B" />
           </a>
@@ -74,7 +77,7 @@ const PortfolioCard = () => {
           </a>
         </div>
 
-        <div className="card bg-2 long">
+        <div className={darkMode ? "card bg-2 long dark" : "card bg-2"}>
           <a href="https://rsh-guess-number.netlify.app/">
             <img src={guessNr} alt="Guess Number" />
           </a>

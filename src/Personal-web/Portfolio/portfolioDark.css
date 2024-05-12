@@ -1,0 +1,26 @@
+.portfolio.dark h1 {
+  color: white;
+}
+
+.portfolio-tabs.dark p {
+  color: #a6a6a6;
+}
+
+.portfolio-tabs p:hover {
+  cursor: pointer;
+  color: #00b4d8;
+}
+
+.card.bg-1.dark,
+.card.bg-2.dark {
+  background-color: #0d0d0d;
+  border: 1px solid #353535;
+}
+
+.card.dark .subtitle {
+  color: #a6a6a6;
+}
+
+.card.dark .title {
+  color: white;
+}

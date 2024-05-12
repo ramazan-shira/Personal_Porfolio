@@ -1,0 +1,16 @@
+.services.dark h1 {
+  color: white;
+}
+
+.service-card.dark {
+  background-color: #0d0d0d;
+  border: 1px solid #353535;
+}
+
+.service-card.dark .service-card-title {
+  color: white;
+}
+
+.service-card.dark .service-card-text {
+  color: #a6a6a6;
+}

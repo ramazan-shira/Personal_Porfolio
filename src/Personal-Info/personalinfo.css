@@ -4,7 +4,7 @@
 .personal-info {
   margin-top: 100px;
   box-sizing: border-box;
-  padding: 30px;
+  padding: 50px;
   background-color: white;
   border-radius: 20px;
   position: sticky;
@@ -123,7 +123,7 @@
   gap: 20px;
   align-items: center;
   margin-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .my-info {

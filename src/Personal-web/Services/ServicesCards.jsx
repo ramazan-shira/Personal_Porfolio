@@ -1,10 +1,12 @@
 import ServicesCard from "./ServicesCard";
 import "./services.css";
 
-const ServicesCards = () => {
+const ServicesCards = (props) => {
+  const { darkMode } = props;
+
   return (
     <div className="services-cards-container">
-      <ServicesCard />
+      <ServicesCard darkMode={darkMode} />
     </div>
   );
 };

@@ -1,12 +1,15 @@
-import informativeWeb from "../../Assets/Images/informative-web-service.png";
-import webApp from "../../Assets/Images/web-app-service.png";
-import eCommerce from "../../Assets/Images/e-commerce-service.png";
-import designWeb from "../../Assets/Images/design-service.png";
+import informativeWeb from "../../Assets/Images/service-1.png";
+import webApp from "../../Assets/Images/service-2.png";
+import eCommerce from "../../Assets/Images/service-3.png";
+import designWeb from "../../Assets/Images/service-4.png";
+import "./servicesDark.css";
 
-const ServicesCard = () => {
+const ServicesCard = (props) => {
+  const { darkMode } = props;
+
   return (
     <div className="cards-container">
-      <div className="service-card">
+      <div className={darkMode ? "service-card dark" : "service-card"}>
         <div className="service-card-image">
           <img src={informativeWeb} alt="Informative Websites" />
         </div>
@@ -19,7 +22,7 @@ const ServicesCard = () => {
           </p>
         </div>
       </div>
-      <div className="service-card">
+      <div className={darkMode ? "service-card dark" : "service-card"}>
         <div className="service-card-image">
           <img src={webApp} alt="Web Applications" />
         </div>
@@ -30,7 +33,7 @@ const ServicesCard = () => {
           <p>Developing user-friendly apps tailored to your business needs.</p>
         </div>
       </div>
-      <div className="service-card">
+      <div className={darkMode ? "service-card dark" : "service-card"}>
         <div className="service-card-image">
           <img src={eCommerce} alt="E-Commerce websites" />
         </div>
@@ -42,7 +45,7 @@ const ServicesCard = () => {
         </div>
       </div>
 
-      <div className="service-card">
+      <div className={darkMode ? "service-card dark" : "service-card"}>
         <div className="service-card-image">
           <img src={designWeb} alt="Design Web Pages/Applications" />
         </div>

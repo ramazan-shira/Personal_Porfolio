@@ -1,11 +1,13 @@
 import ServicesCards from "./ServicesCards";
 import "./services.css";
+import "./servicesDark.css";
 
-const Services = () => {
+const Services = (props) => {
+  const { darkMode } = props;
   return (
-    <div className="services" id="services">
+    <div className={darkMode ? "services dark" : "services"} id="services">
       <h1>Services</h1>
-      <ServicesCards />
+      <ServicesCards darkMode={darkMode} />
     </div>
   );
 };

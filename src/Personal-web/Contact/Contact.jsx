@@ -1,12 +1,14 @@
 import ContactForm from "./ContactForm";
 import "./contact.css";
-const Contact = () => {
+import "./contactDark.css";
+
+const Contact = (props) => {
+  const { darkMode } = props;
   return (
-    <div className="contact" id="contact">
+    <div className={darkMode ? "contact dark" : "contact"} id="contact">
       <h1>Contact</h1>
-      <p>Open to exploring opportunities for </p>
-      <h2>product design collaborations or partnerships.</h2>
-      <ContactForm />
+
+      <ContactForm darkMode={darkMode} />
     </div>
   );
 };
