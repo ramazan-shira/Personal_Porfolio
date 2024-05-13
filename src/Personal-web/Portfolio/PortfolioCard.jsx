@@ -4,7 +4,7 @@ import notes from "../../Assets/Images/notes-react.png";
 import todolistReact from "../../Assets/Images/todolist=react.png";
 import toDoList from "../../Assets/Images/toDoList.png";
 import digitalmastery from "../../Assets/Images/digitalmastery.png";
-import llotoB from "../../Assets/Images/llotoB.png";
+import llotoB from "../../Assets/Images/llotob.png";
 import guessNr from "../../Assets/Images/guessNr.png";
 import tasteIt from "../../Assets/Images/tasteIt.png";
 import rollDice from "../../Assets/Images/rollDice.png";
