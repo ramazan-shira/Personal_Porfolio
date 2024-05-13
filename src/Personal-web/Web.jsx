@@ -7,7 +7,7 @@ import Contact from "./Contact/Contact";
 import Footer from "./Footer/Footer";
 import { useState } from "react";
 import "./personal-webDark.css";
-import Navbar from "./NavBar/Navbar";
+import Navbar from "./Navbar/Navbar";
 
 const Web = (props) => {
   const { darkMode } = props;
