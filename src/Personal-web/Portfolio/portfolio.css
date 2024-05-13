@@ -65,8 +65,8 @@
   margin-bottom: 10px;
 }
 
-.long img {
-  height: 200px;
+.card.long img {
+  height: 190px;
 }
 
 .card img:hover {
