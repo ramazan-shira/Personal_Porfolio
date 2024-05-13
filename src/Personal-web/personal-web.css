@@ -30,7 +30,7 @@
 
   .navigation-bar {
     position: absolute;
-    width: 75%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: flex-end;

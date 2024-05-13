@@ -16,6 +16,10 @@
   border: none;
 }
 
+.theme button:hover {
+  cursor: pointer;
+}
+
 .theme.dark button {
   background-color: black;
 }
@@ -28,5 +32,23 @@
 @media screen and (max-width: 992px) {
   .theme {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .theme {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .theme {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .theme {
+    width: 75%;
   }
 }

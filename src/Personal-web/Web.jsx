@@ -1,4 +1,3 @@
-import Navbar from "./Navbar/Navbar";
 import "./personal-web.css";
 import About from "./About/About";
 import Resume from "./Resume/Resume";
@@ -8,6 +7,7 @@ import Contact from "./Contact/Contact";
 import Footer from "./Footer/Footer";
 import { useState } from "react";
 import "./personal-webDark.css";
+import Navbar from "./NavBar/Navbar";
 
 const Web = (props) => {
   const { darkMode } = props;
@@ -21,6 +21,11 @@ const Web = (props) => {
           selectedTab={selectedTab}
           darkMode={darkMode}
         />
+        {/* <Navbar
+          setSelected={setSelected}
+          selectedTab={selectedTab}
+          darkMode={darkMode}
+        /> */}
       </div>
       <div
         className={

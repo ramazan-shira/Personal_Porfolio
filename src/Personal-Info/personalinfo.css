@@ -17,8 +17,7 @@
   width: 200px;
   border-radius: 20px;
   margin-top: -40%;
-  margin-left: 25%;
-  margin: -30% 0 30px 25%;
+  margin-bottom: 20px;
 }
 
 .personal-details {
@@ -29,6 +28,13 @@
   align-items: center;
   gap: 20px;
   margin-bottom: 30px;
+}
+
+.photo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .photo img {
