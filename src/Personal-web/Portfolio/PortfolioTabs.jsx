@@ -1,16 +1,22 @@
+import { useState } from "react";
 import "./portfolio.css";
 import "./portfolioDark.css";
 
 const PortfolioTabs = (props) => {
-  const { darkMode } = props;
+  const { darkMode, setSelectedCategory, selectedCategory } = props;
+
+  const categories = [
+    { name: "All", id: "all" },
+    { name: "Development", id: "development" },
+    { name: "Design", id: "design" },
+    { name: "Games", id: "games" },
+  ];
 
   return (
     <div className={darkMode ? "portfolio-tabs dark" : "portfolio-tabs"}>
-      <p>All</p>
-      <p>Development</p>
-      <p>Applications</p>
-      <p>Design</p>
-      <p>Games</p>
+      {categories.map((category) => (
+        <p key={category.id}>{category.name}</p>
+      ))}
     </div>
   );
 };

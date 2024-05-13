@@ -1,5 +1,6 @@
 import "./theme.css";
 import { useEffect } from "react";
+import "boxicons";
 
 const Theme = (props) => {
   const { darkMode, setDarkMode } = props;
@@ -21,11 +22,16 @@ const Theme = (props) => {
   return (
     <div className={darkMode ? "theme dark" : "theme"}>
       <button onClick={handleTheme}>
-        <i
+        {darkMode ? (
+          <box-icon name="sun" type="solid" color="#ffffff"></box-icon>
+        ) : (
+          <box-icon name="moon" type="solid"></box-icon>
+        )}
+        {/* <i
           className={
             darkMode ? "sunicon fa-regular fa-sun" : "moonicon fa-solid fa-moon"
           }
-        ></i>
+        ></i> */}
       </button>
     </div>
   );

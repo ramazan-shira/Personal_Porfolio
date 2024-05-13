@@ -13,7 +13,6 @@ import "./portfolioDark.css";
 
 const PortfolioCard = (props) => {
   const { darkMode } = props;
-
   return (
     <div className="portfolio-cards-container">
       <div className="portfolio-cards-container-column1">
@@ -36,7 +35,6 @@ const PortfolioCard = (props) => {
             <p className="title">Notes - React App</p>
           </a>
         </div>
-
         <div className={darkMode ? "card bg-1 long dark" : "card bg-1 long"}>
           <a href="https://zani-todolist.netlify.app/">
             <img src={todolistReact} alt="to do list" />
@@ -46,7 +44,6 @@ const PortfolioCard = (props) => {
             <p className="title">To Do List - React App</p>
           </a>
         </div>
-
         <div className={darkMode ? "card bg-2 dark" : "card bg-2"}>
           <a href="https://digitalmastery.netlify.app/">
             <img src={digitalmastery} alt="digitalmastery" />
@@ -56,7 +53,6 @@ const PortfolioCard = (props) => {
             <p className="title">DigitalMastery</p>
           </a>
         </div>
-
         <div className={darkMode ? "card bg-2 long dark" : "card bg-2"}>
           <a href="https://rsh-roll-dice.netlify.app/">
             <img src={rollDice} alt="roll dice" />
