@@ -27,6 +27,15 @@
     position: static;
     width: 100%;
   }
+
+  .navigation-bar {
+    position: absolute;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    top: 140px;
+  }
 }
 
 @media screen and (max-width: 540px) {

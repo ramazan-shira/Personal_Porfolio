@@ -1,6 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap");
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
 
 .tabs {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.nav-tabs {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -10,7 +25,7 @@
   border-radius: 20px;
 }
 
-.tab:not(.active) {
+button.tab:not(.active) {
   background-color: #f8f9f4;
   display: flex;
   justify-content: center;
@@ -29,7 +44,7 @@ button.tab.active {
   color: white;
 }
 
-button {
+button.tab {
   width: 84px;
   height: 84px;
   border-radius: 10px;
@@ -50,14 +65,81 @@ button:hover {
   cursor: pointer;
 }
 
-.tab:hover {
+#mobile-icon {
+  display: none;
+}
+
+#mobile-icon button {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+#mobile-icon button:hover {
   background-color: #00b4d8;
 }
 
-.navbar {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+@media screen and (max-width: 992px) {
+  #mobile-icon {
+    display: block;
+    position: absolute;
+    top: -70px;
+  }
 
-  width: 100%;
+  .tabs {
+    width: 100%;
+  }
+
+  .nav-tabs {
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px 0;
+    border-radius: 20px;
+    position: absolute;
+    box-shadow: 0 6px 6px hsla(0, 0%, 93%, 0.2);
+    top: 20px;
+    left: 0;
+    right: 0;
+    transform-origin: top;
+    z-index: 5;
+    transition: 0.5s;
+  }
+
+  button.tab {
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    padding: 5px 70px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Roboto Slab", serif;
+    border: none;
+    color: #44566c;
+  }
+
+  button.tab:hover {
+    color: #00b4d8;
+    cursor: pointer;
+  }
+
+  button.tab:not(.active) {
+    background-color: white;
+  }
 }

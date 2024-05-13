@@ -1,5 +1,6 @@
 import "./navbar.css";
 import "./navbarDark.css";
+import "boxicons";
 
 const Tab = (props) => {
   const { darkMode } = props;

@@ -15,11 +15,13 @@ const Web = (props) => {
 
   return (
     <div className="personal-web-container">
-      <Navbar
-        setSelected={setSelected}
-        selectedTab={selectedTab}
-        darkMode={darkMode}
-      />
+      <div className="navigation-bar">
+        <Navbar
+          setSelected={setSelected}
+          selectedTab={selectedTab}
+          darkMode={darkMode}
+        />
+      </div>
       <div
         className={
           darkMode ? "personal-web-content dark" : "personal-web-content"
