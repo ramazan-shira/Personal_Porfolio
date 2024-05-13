@@ -10,7 +10,7 @@ const ContactForm = (props) => {
         Open to exploring opportunities for product design collaborations or
         partnerships.
       </p>
-      <form className={darkMode ? "contact-form dark" : "contact-form"}>
+      <form className={darkMode ? "contact-form dark" : "contact-form"} netlify>
         <input type="text" placeholder="Name" />
         <input type="email" placeholder="Email" />
         <textarea placeholder="Message" color="30" rows="1"></textarea>
