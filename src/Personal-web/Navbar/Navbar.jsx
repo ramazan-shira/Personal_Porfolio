@@ -41,7 +41,6 @@ const Navbar = (props) => {
 
   return (
     <div className="navbar-container">
-      {/* <div className={isOpen ? "navbar-links active" : "navbar-links"}> */}
       <div
         className={`${isOpen ? "navbar-links active" : "navbar-links"} ${
           darkMode ? "dark" : ""

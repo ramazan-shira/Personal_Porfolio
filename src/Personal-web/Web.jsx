@@ -21,11 +21,6 @@ const Web = (props) => {
           selectedTab={selectedTab}
           darkMode={darkMode}
         />
-        {/* <Navbar
-          setSelected={setSelected}
-          selectedTab={selectedTab}
-          darkMode={darkMode}
-        /> */}
       </div>
       <div
         className={

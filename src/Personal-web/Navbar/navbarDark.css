@@ -9,7 +9,6 @@
 
 .tab.dark:hover {
   cursor: pointer;
-  color: #00b4d8;
 }
 
 .navbar-toggle.dark {
@@ -20,5 +19,9 @@
 @media screen and (max-width: 992px) {
   .tab.dark {
     background-color: black;
+  }
+
+  .tab.dark:hover {
+    color: #00b4d8;
   }
 }
