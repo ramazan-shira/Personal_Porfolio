@@ -33,3 +33,9 @@
   box-sizing: border-box;
   padding: 10px;
 }
+
+@media screen and (max-width: 500px) {
+  .knowledge-card {
+    flex-wrap: wrap;
+  }
+}

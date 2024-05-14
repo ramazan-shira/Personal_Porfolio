@@ -85,3 +85,15 @@
     gap: 30px;
   }
 }
+
+@media screen and (max-width: 430px) {
+  .service-card-title p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .service-card-text p {
+    font-size: 14px;
+    text-align: left;
+  }
+}

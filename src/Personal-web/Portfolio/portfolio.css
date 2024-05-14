@@ -121,12 +121,6 @@ a .title {
     gap: 40px;
   }
 
-  .portfolio-tabs {
-    flex-wrap: wrap;
-    row-gap: 10px;
-    margin-bottom: 20px;
-  }
-
   .portfolio-tabs p {
     margin: 0;
   }
@@ -139,5 +133,16 @@ a .title {
 
   .card img:hover {
     transform: scale(1.1);
+  }
+
+  .portfolio-tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .portfolio-tabs p {
+    text-align: center;
   }
 }
