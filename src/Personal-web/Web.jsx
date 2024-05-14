@@ -4,7 +4,6 @@ import Resume from "./Resume/Resume";
 import Portfolio from "./Portfolio/Portfolio";
 import Services from "./Services/Services";
 import Contact from "./Contact/Contact";
-import Footer from "./Footer/Footer";
 import { useState } from "react";
 import "./personal-webDark.css";
 import Navbar from "./Navbar/Navbar";
@@ -32,7 +31,6 @@ const Web = (props) => {
         {selectedTab === "portfolio" && <Portfolio darkMode={darkMode} />}
         {selectedTab === "services" && <Services darkMode={darkMode} />}
         {selectedTab === "contact" && <Contact darkMode={darkMode} />}
-        <Footer darkMode={darkMode} />
       </div>
     </div>
   );

@@ -5,12 +5,6 @@ body {
 }
 
 .darkBg {
-  /* background: linear-gradient(
-    112.1deg,
-    rgb(32, 38, 57) 11.4%,
-    rgb(63, 76, 119) 70.2%
-  ); */
-
   background-image: url("./Assets/Images/dark-bg.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,7 +19,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding: 70px 0 0 0;
+  padding: 70px 0 30px 0;
 }
 
 @media screen and (max-width: 1300px) {
@@ -57,10 +51,14 @@ body {
   .container {
     padding: 70px 50px;
   }
+
+  .content {
+    gap: 20px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-  .container {
-    padding: 70px 30px;
+  .content {
+    gap: 10px;
   }
 }
