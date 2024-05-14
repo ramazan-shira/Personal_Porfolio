@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./portfolio.css";
 import "./portfolioDark.css";
 
@@ -12,10 +11,20 @@ const PortfolioTabs = (props) => {
     { name: "Games", id: "games" },
   ];
 
+  const handleCategory = (id) => {
+    setSelectedCategory(id);
+  };
+
   return (
     <div className={darkMode ? "portfolio-tabs dark" : "portfolio-tabs"}>
       {categories.map((category) => (
-        <p key={category.id}>{category.name}</p>
+        <p
+          key={category.id}
+          onClick={() => handleCategory(category.id)}
+          className={category.id === selectedCategory ? "active" : ""}
+        >
+          {category.name}
+        </p>
       ))}
     </div>
   );

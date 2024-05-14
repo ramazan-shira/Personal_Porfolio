@@ -17,7 +17,7 @@ const ContactForm = (props) => {
         Open to exploring opportunities for product design collaborations or
         partnerships.
       </p>
-      <form className={darkMode ? "contact-form dark" : "contact-form"}>
+      <div className={darkMode ? "contact-form dark" : "contact-form"}>
         <input type="text" placeholder="Name" />
         <input type="email" placeholder="Email" />
         <textarea placeholder="Message" color="30" rows="1"></textarea>
@@ -27,7 +27,7 @@ const ContactForm = (props) => {
         {submitted && (
           <p className={darkMode ? "message dark" : "message"}>Message sent!</p>
         )}
-      </form>
+      </div>
     </div>
   );
 };

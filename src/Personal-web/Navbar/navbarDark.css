@@ -9,10 +9,17 @@
 
 .tab.dark:hover {
   cursor: pointer;
+  background-color: #00b4d8;
+  color: white;
 }
 
 .navbar-toggle.dark {
   background-color: black;
+  color: white;
+}
+
+.tab.dark.active {
+  background-color: #00b4d8;
   color: white;
 }
 
@@ -23,5 +30,11 @@
 
   .tab.dark:hover {
     color: #00b4d8;
+    background-color: black;
+  }
+
+  .tab.dark.active {
+    color: #00b4d8;
+    background-color: black;
   }
 }

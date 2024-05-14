@@ -10,7 +10,7 @@ const Navtabs = (props) => {
 
   return (
     <button
-      className={darkMode ? `tab dark ${props.active && "active"}` : "tab"}
+      className={`${props.active && "active"} ${darkMode ? "tab dark" : "tab"}`}
       onClick={handleTabClick}
     >
       <i className={props.icon}></i>

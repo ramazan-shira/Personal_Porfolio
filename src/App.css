@@ -36,7 +36,7 @@ body {
 
 @media screen and (max-width: 992px) {
   .content {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     gap: 50px;

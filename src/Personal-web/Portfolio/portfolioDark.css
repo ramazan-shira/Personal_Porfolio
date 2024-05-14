@@ -11,8 +11,12 @@
   color: #00b4d8;
 }
 
-.card.bg-1.dark,
-.card.bg-2.dark {
+.portfolio-tabs.dark .active {
+  color: #00b4d8;
+}
+
+.card.dark,
+.card.dark {
   background-color: #0d0d0d;
   border: 1px solid #353535;
 }

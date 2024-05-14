@@ -27,17 +27,14 @@
   color: #00b4d8;
 }
 
-.portfolio-cards-container {
+.portfolio-tabs .active {
+  color: #00b4d8;
+}
+
+.portfolio-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-}
-
-.portfolio-cards-container-column1,
-.portfolio-cards-container-column2 {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
 .card {
@@ -51,11 +48,11 @@
   font-family: "Arvo", serif;
 }
 
-.bg-1 {
+.card:nth-child(1n) {
   background-color: #edf6f9;
 }
 
-.bg-2 {
+.card:nth-child(2n) {
   background-color: #ffe5ec;
 }
 
@@ -105,11 +102,6 @@ a .title {
     align-items: center;
     gap: 20px;
   }
-
-  .portfolio-cards-container-column1,
-  .portfolio-cards-container-column2 {
-    gap: 30px;
-  }
 }
 
 @media screen and (max-width: 992px) {
@@ -127,11 +119,6 @@ a .title {
     justify-content: center;
     align-items: center;
     gap: 40px;
-  }
-
-  .portfolio-cards-container-column1,
-  .portfolio-cards-container-column2 {
-    gap: 30px;
   }
 
   .portfolio-tabs {
