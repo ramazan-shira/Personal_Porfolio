@@ -11,7 +11,7 @@ const Content = (props) => {
         <PersonalInfo darkMode={darkMode} />
         <PersonalWeb darkMode={darkMode} />
       </div>
-      <div className="footer">
+      <div className="footer-container">
         <Footer darkMode={darkMode} />
       </div>
     </>

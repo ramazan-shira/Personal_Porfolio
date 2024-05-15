@@ -14,6 +14,7 @@ const PortfolioCards = (props) => {
         )
         .map((card) => (
           <PortfolioCard
+            key={card.id}
             darkMode={darkMode}
             title={card.title}
             subtitle={card.subtitle}
