@@ -13,17 +13,13 @@
 }
 
 .footer p {
+  width: 100%;
   margin: 0;
   font-size: 18px;
   font-family: "Crete Round", serif;
+  text-align: center;
 }
 
 .footer.dark p {
   color: #a6a6a6;
-}
-
-@media screen and (max-width: 600px) {
-  .footer {
-    text-align: center;
-  }
 }
