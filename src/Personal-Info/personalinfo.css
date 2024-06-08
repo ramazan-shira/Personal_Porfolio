@@ -122,7 +122,7 @@
 .info {
   box-sizing: border-box;
   padding: 30px;
-  background-color: #f3f6f6;
+  background-color: #f8fbfb;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -140,6 +140,10 @@
   gap: 10px;
   padding: 10px 0;
   border-bottom: 1px solid #e3e3e3;
+}
+
+.my-info:last-child {
+  border-bottom: none;
 }
 
 .personal-info-icon {
@@ -235,7 +239,7 @@
   }
 
   .info {
-    padding: 10px;
+    padding: 20px 10px;
   }
 }
 
@@ -254,6 +258,24 @@
     position: static;
     width: 100%;
     padding: 70px;
+  }
+
+  .personal-info-title {
+    font-size: 12px;
+  }
+
+  .personal-info-content {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .personal-info-title {
+    font-size: 12px;
+  }
+
+  .personal-info-content {
+    font-size: 14px;
   }
 }
 

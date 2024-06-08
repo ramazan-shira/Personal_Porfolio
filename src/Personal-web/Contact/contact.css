@@ -30,8 +30,10 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 30px;
+  background-color: #f8fbfb;
   box-sizing: border-box;
   padding: 50px;
+  border-radius: 20px;
 }
 
 .contact-form {
@@ -42,12 +44,29 @@
   margin-top: 30px;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-form div {
+  height: 55px;
+}
+
+.contact-form input {
   height: 40px;
   outline: none;
   border: none;
   border-bottom: 1px solid #b5b5b5;
+  background-color: #f8fbfb;
+  transition: 3s;
+  font-size: 18px;
+  font-family: "Arvo", serif;
+  padding: 6px;
+  width: 90%;
+}
+
+.contact-form textarea {
+  resize: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #b5b5b5;
+  background-color: #f8fbfb;
   transition: 3s;
   font-size: 18px;
   font-family: "Arvo", serif;
@@ -71,6 +90,7 @@ textarea:focus {
   border-radius: 10px;
   border: 1px solid #44566c;
   transition: all 0.4s ease-in-out;
+  margin-top: 70px;
 }
 
 .contact-form button:hover {
@@ -88,6 +108,12 @@ textarea:focus {
 
 .message.dark {
   color: lightgreen;
+}
+
+.error {
+  font-size: 14px;
+  color: red;
+  margin: 0;
 }
 
 @media screen and (max-width: 1300px) {
