@@ -52,8 +52,6 @@ const Navbar = (props) => {
             id={tab.id}
             title={tab.name}
             icon={tab.icon}
-            setSelected={props.setSelected}
-            active={props.selectedTab === tab.id}
             darkMode={darkMode}
             setIsOpen={setIsOpen}
           />

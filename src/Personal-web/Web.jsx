@@ -7,30 +7,31 @@ import Contact from "./Contact/Contact";
 import { useState } from "react";
 import "./personal-webDark.css";
 import Navbar from "./Navbar/Navbar";
+import { Route, Routes } from "react-router-dom";
 
 const Web = (props) => {
   const { darkMode } = props;
-  const [selectedTab, setSelected] = useState("about");
 
   return (
     <div className="personal-web-container">
       <div className="navigation-bar">
-        <Navbar
-          setSelected={setSelected}
-          selectedTab={selectedTab}
-          darkMode={darkMode}
-        />
+        <Navbar darkMode={darkMode} />
       </div>
       <div
         className={
           darkMode ? "personal-web-content dark" : "personal-web-content"
         }
       >
-        {selectedTab === "about" && <About darkMode={darkMode} />}
-        {selectedTab === "resume" && <Resume darkMode={darkMode} />}
-        {selectedTab === "portfolio" && <Portfolio darkMode={darkMode} />}
-        {selectedTab === "services" && <Services darkMode={darkMode} />}
-        {selectedTab === "contact" && <Contact darkMode={darkMode} />}
+        <Routes>
+          <Route path="/about" element={<About darkMode={darkMode} />} />
+          <Route path="/resume" element={<Resume darkMode={darkMode} />} />
+          <Route
+            path="/portfolio"
+            element={<Portfolio darkMode={darkMode} />}
+          />
+          <Route path="/services" element={<Services darkMode={darkMode} />} />
+          <Route path="/contact" element={<Contact darkMode={darkMode} />} />
+        </Routes>
       </div>
     </div>
   );
