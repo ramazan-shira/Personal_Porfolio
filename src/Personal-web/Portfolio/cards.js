@@ -3,6 +3,7 @@ import todolistReact from "../../Assets/Images/todolist=react.png";
 import toDoList from "../../Assets/Images/toDoList.png";
 import petExpo from "../../Assets/Images/pet-expo.png";
 import githubUser from "../../Assets/Images/github-user.png";
+import reactRouterMovies from "../../Assets/Images/reactRouterMovies.png";
 import digitalmastery from "../../Assets/Images/digitalmastery.png";
 import llotoB from "../../Assets/Images/lloto.png";
 import guessNr from "../../Assets/Images/guessNr.png";
@@ -56,7 +57,7 @@ const cards = [
     title: "React Router Movies",
     subtitle: "React Router Movies",
     url: "https://rsh-react-router-movies.netlify.app/",
-    img: githubUser,
+    img: reactRouterMovies,
     category: "development",
   },
   {
