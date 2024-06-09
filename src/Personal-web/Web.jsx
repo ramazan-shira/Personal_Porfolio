@@ -4,7 +4,6 @@ import Resume from "./Resume/Resume";
 import Portfolio from "./Portfolio/Portfolio";
 import Services from "./Services/Services";
 import Contact from "./Contact/Contact";
-import { useState } from "react";
 import "./personal-webDark.css";
 import Navbar from "./Navbar/Navbar";
 import { Navigate, Route, Routes } from "react-router-dom";
