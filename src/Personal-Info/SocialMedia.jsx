@@ -19,7 +19,7 @@ const SocialMedia = (props) => {
       <a href="https://github.com/ramazan-shira">
         <i className="fa-brands fa-github"></i>
       </a>
-      <a href="https://app.netlify.com/teams/ramazan-shira/overview">
+      <a href="https://ramazanshira.netlify.app/">
         <i className="fa-solid fa-folder-closed"></i>
       </a>
     </div>
