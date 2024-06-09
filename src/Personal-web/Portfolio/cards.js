@@ -1,6 +1,8 @@
 import notes from "../../Assets/Images/notes-react.png";
 import todolistReact from "../../Assets/Images/todolist=react.png";
 import toDoList from "../../Assets/Images/toDoList.png";
+import petExpo from "../../Assets/Images/pet-expo.png";
+import githubUser from "../../Assets/Images/github-user.png";
 import digitalmastery from "../../Assets/Images/digitalmastery.png";
 import llotoB from "../../Assets/Images/lloto.png";
 import guessNr from "../../Assets/Images/guessNr.png";
@@ -19,7 +21,7 @@ const cards = [
   },
   {
     id: 2,
-    title: "Notes - React App",
+    title: "Notes - React JS App",
     subtitle: "Notes application",
     url: "https://rsh-notesapp-react.netlify.app/",
     img: notes,
@@ -27,7 +29,7 @@ const cards = [
   },
   {
     id: 3,
-    title: "To Do List - React App",
+    title: "To Do List - React JS App",
     subtitle: "To Do List",
     url: "https://zani-todolist.netlify.app/",
     img: todolistReact,
@@ -35,6 +37,30 @@ const cards = [
   },
   {
     id: 4,
+    title: "PET EXPO",
+    subtitle: "Animals Gallery - React JS",
+    url: "https://rsh-pet-expo.netlify.app/",
+    img: petExpo,
+    category: "development",
+  },
+  {
+    id: 5,
+    title: "Github User Profile",
+    subtitle: "Github User Profile Card - React JS",
+    url: "https://rsh-github-usercard.netlify.app/",
+    img: githubUser,
+    category: "development",
+  },
+  {
+    id: 6,
+    title: "React Router Movies",
+    subtitle: "React Router Movies",
+    url: "https://rsh-react-router-movies.netlify.app/",
+    img: githubUser,
+    category: "development",
+  },
+  {
+    id: 7,
     title: "DigitalMastery Hub",
     subtitle: "Course/Training center website",
     url: "https://digitalmastery.netlify.app/",
@@ -42,7 +68,7 @@ const cards = [
     category: "design",
   },
   {
-    id: 5,
+    id: 8,
     title: "Roll Dice",
     subtitle: "oll Dice Game",
     url: "https://rsh-roll-dice.netlify.app/",
@@ -50,7 +76,7 @@ const cards = [
     category: "games",
   },
   {
-    id: 6,
+    id: 9,
     title: "To Do List - JavaScript App",
     subtitle: "To Do List application",
     url: "https://rsh-todolist.netlify.app/",
@@ -58,7 +84,7 @@ const cards = [
     category: "development",
   },
   {
-    id: 7,
+    id: 10,
     title: "LlotoB",
     subtitle: "Lottery page",
     url: "https://llotob-app.netlify.app/",
@@ -66,7 +92,7 @@ const cards = [
     category: "design",
   },
   {
-    id: 8,
+    id: 11,
     title: "Guess Number",
     subtitle: "Guess Number Game",
     url: "https://rsh-guess-number.netlify.app/",
@@ -74,7 +100,7 @@ const cards = [
     category: "games",
   },
   {
-    id: 9,
+    id: 12,
     title: "Taste IT",
     subtitle: "Taste IT - Restaurant website",
     url: "https://tasteit-restaurant.netlify.app/",

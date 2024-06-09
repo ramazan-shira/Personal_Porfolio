@@ -30,7 +30,7 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 30px;
-  background-color: #f8fbfb;
+  background-color: #f4feff;
   box-sizing: border-box;
   padding: 50px;
   border-radius: 20px;
@@ -53,7 +53,7 @@
   outline: none;
   border: none;
   border-bottom: 1px solid #b5b5b5;
-  background-color: #f8fbfb;
+  background-color: #f4feff;
   transition: 3s;
   font-size: 18px;
   font-family: "Arvo", serif;
@@ -66,7 +66,7 @@
   outline: none;
   border: none;
   border-bottom: 1px solid #b5b5b5;
-  background-color: #f8fbfb;
+  background-color: #f4feff;
   transition: 3s;
   font-size: 18px;
   font-family: "Arvo", serif;

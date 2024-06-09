@@ -7,7 +7,7 @@ import Contact from "./Contact/Contact";
 import { useState } from "react";
 import "./personal-webDark.css";
 import Navbar from "./Navbar/Navbar";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 
 const Web = (props) => {
   const { darkMode } = props;
@@ -23,6 +23,7 @@ const Web = (props) => {
         }
       >
         <Routes>
+          <Route path="/" element={<Navigate to="/about" />} />
           <Route path="/about" element={<About darkMode={darkMode} />} />
           <Route path="/resume" element={<Resume darkMode={darkMode} />} />
           <Route
