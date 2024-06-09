@@ -71,7 +71,7 @@ const cards = [
   {
     id: 8,
     title: "Roll Dice",
-    subtitle: "oll Dice Game",
+    subtitle: "Roll Dice Game",
     url: "https://rsh-roll-dice.netlify.app/",
     img: rollDice,
     category: "games",
