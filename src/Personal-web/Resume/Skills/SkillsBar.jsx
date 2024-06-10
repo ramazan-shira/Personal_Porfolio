@@ -18,7 +18,7 @@ const SkillsBar = (props) => {
       <div className={darkMode ? "bar dark" : "bar"}>
         <div className="bar-title">
           <p className="skill">CSS</p>
-          <p className="progress">85%</p>
+          <p className="progress">95%</p>
         </div>
         <div className="bar-progress">
           <input type="range" min="0" max="100" value="85" className="bg-2" />
@@ -36,7 +36,7 @@ const SkillsBar = (props) => {
       <div className={darkMode ? "bar dark" : "bar"}>
         <div className="bar-title">
           <p className="skill">React JS</p>
-          <p className="progress">85%</p>
+          <p className="progress">90%</p>
         </div>
         <div className="bar-progress">
           <input type="range" min="0" max="100" value="85" className="bg-4" />

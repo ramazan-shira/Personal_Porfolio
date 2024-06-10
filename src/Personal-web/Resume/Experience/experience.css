@@ -36,6 +36,11 @@
   border-radius: 20px;
   box-sizing: border-box;
   padding: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.exp-card:hover {
+  transform: scale(1.03);
 }
 
 .bg-1 {
