@@ -1,5 +1,5 @@
 import notes from "../../Assets/Images/notes-react.png";
-import carSales from "../../Assets/Images/car-sales.png";
+import carSales from "../../Assets/Images/carSales.png";
 import userManagement from "../../Assets/Images/user-management.png";
 import toDoListRedux from "../../Assets/Images/toDoList-redux.png";
 import todolistReact from "../../Assets/Images/todolist=react.png";
@@ -35,7 +35,7 @@ const cards = [
     id: 3,
     title: "Car Sales - React Redux",
     subtitle: "Car Sales",
-    url: "https://carsales-redux.netlify.app/",
+    url: "https://rsh-car-sales-redux.netlify.app/",
     img: carSales,
     category: "development",
   },
