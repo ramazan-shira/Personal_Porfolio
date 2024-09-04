@@ -12,16 +12,16 @@ import llotoB from "../../Assets/Images/lloto.png";
 import guessNr from "../../Assets/Images/guessNr.png";
 import tasteIt from "../../Assets/Images/tasteIt.png";
 import rollDice from "../../Assets/Images/rollDice.png";
-import personalPortfolio from "../../Assets/Images/personalPortfolio.png";
+import taskease from "../../Assets/Images/taskease.png";
 
 const cards = [
   {
     id: 1,
-    title: "My Portfolio",
-    subtitle: "Personal Portfolio Website",
-    url: "https://rsh-portfolio.netlify.app/",
-    img: personalPortfolio,
-    category: "design",
+    title: "TaskEase",
+    subtitle: "Task Management Application",
+    url: "https://taskease-front.netlify.app/",
+    img: taskease,
+    category: "development",
   },
   {
     id: 2,
