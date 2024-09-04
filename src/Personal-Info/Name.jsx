@@ -6,7 +6,7 @@ const Name = (props) => {
   return (
     <div className="personal-details">
       <p className={darkMode ? "name dark" : "name"}>Ramazan Shira</p>
-      <p className={darkMode ? "job dark" : "job"}>Web Developer</p>
+      <p className={darkMode ? "job dark" : "job"}>Full Stack Developer</p>
     </div>
   );
 };
