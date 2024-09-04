@@ -7,6 +7,20 @@ const WorkExpCards = (props) => {
   return (
     <div className="work-exp-cards">
       <div className={darkMode ? "exp-card bg-2 dark" : "exp-card bg-2"}>
+        <div className="period">August 2024 - CURRENT</div>
+        <div className="position">
+          Head of Digitalization and Microfilm Sector
+        </div>
+        <div className="company">General Directorate of Archives</div>
+      </div>
+      <div className={darkMode ? "exp-card bg-2 dark" : "exp-card bg-2"}>
+        <div className="period">February 2024 - June 2024</div>
+        <div className="position">
+          Electronic Equipments Sales Representative
+        </div>
+        <div className="company">Previsa Shpk</div>
+      </div>
+      <div className={darkMode ? "exp-card bg-2 dark" : "exp-card bg-2"}>
         <div className="period">May 2023 - August 2023</div>
         <div className="position">Data Entry</div>
         <div className="company">Buzi Store</div>
