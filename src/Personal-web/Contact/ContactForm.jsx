@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./contact.css";
 import "./contactDark.css";
+import axios from "axios";
 
 const ContactForm = (props) => {
   const { darkMode } = props;
@@ -19,39 +20,60 @@ const ContactForm = (props) => {
   const fullNameCharacterRegex = /^[a-zA-Z]+\s[a-zA-Z]+$/;
   const regEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-  const handleSubmit = () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    let formIsValid = true;
+
     if (name === "") {
       setNameError("First name and last name cannot be empty!");
-      setValid(false);
+      formIsValid = false;
     } else if (!fullNameLengthRegex.test(name)) {
       setNameError("First name and last name must have at least 3 letters!");
-      setValid(false);
+      formIsValid = false;
     } else if (!fullNameCharacterRegex.test(name)) {
       setNameError("First name and last name can contain only letters!");
-      setValid(false);
+      formIsValid = false;
     } else {
       setNameError("");
-      setValid(true);
     }
 
     if (email === "") {
       setEmailError("Email cannot be empty!");
-      setValid(false);
+      formIsValid = false;
     } else if (!regEmail.test(email)) {
       setEmailError("Invalid email address!");
-      setValid(false);
+      formIsValid = false;
     } else {
       setEmailError("");
-      setValid(true);
     }
 
     if (message === "") {
       setMessageError("Message cannot be empty!");
+      formIsValid = false;
     } else if (message.length <= 10) {
       setMessageError("Message should have at least 10 characters!");
+      formIsValid = false;
     } else {
       setMessageError("");
-      setValid(true);
+    }
+
+    if (formIsValid) {
+      try {
+        await axios.post("http://localhost:5000/send-email", {
+          name,
+          email,
+          message,
+        });
+        setValid(true);
+        setName("");
+        setEmail("");
+        setMessage("");
+      } catch (error) {
+        console.error("Error sending message:", error);
+        setValid(false);
+      }
+    } else {
+      setValid(false);
     }
   };
 

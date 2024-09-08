@@ -87,15 +87,15 @@ a .title {
   margin: 0;
 }
 
-@media screen and (max-width: 1300px) {
+@media (width <= 1300px) {
   .portfolio h1::after {
     left: 64%;
     top: 65%;
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .portfolio-cards-container {
+@media (width <= 1080px) {
+  .portfolio-cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -104,16 +104,26 @@ a .title {
   }
 }
 
-@media screen and (max-width: 992px) {
-  .portfolio-cards-container {
+@media (width <= 1150px) {
+  .portfolio-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+@media (width <= 1000px) {
+  .portfolio-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .portfolio-cards-container {
+@media (width <= 768px) {
+  .portfolio-cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,7 +136,7 @@ a .title {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media (width <= 650px) {
   .portfolio-cards {
     grid-template-columns: 1fr;
   }

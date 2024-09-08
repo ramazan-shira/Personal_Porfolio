@@ -12,10 +12,15 @@
   color: white;
 }
 
+.contact-me.dark p.message.dark {
+  color: #affc41;
+}
+
 .contact-form.dark input,
 .contact-form.dark textarea {
   border-bottom: 1px solid #353535;
   background-color: #0d0d0d;
+  color: white;
 }
 
 .contact-form.dark button {
