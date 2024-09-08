@@ -59,11 +59,14 @@ const ContactForm = (props) => {
 
     if (formIsValid) {
       try {
-        await axios.post("http://localhost:5000/send-email", {
-          name,
-          email,
-          message,
-        });
+        await axios.post(
+          "https://portfolio-backend-production-a00d.up.railway.app//send-email",
+          {
+            name,
+            email,
+            message,
+          }
+        );
         setValid(true);
         setName("");
         setEmail("");
