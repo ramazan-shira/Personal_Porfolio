@@ -10,7 +10,7 @@ const PortfolioCard = (props) => {
         <img src={img} alt={title} />
       </a>
       <p className="subtitle">{subtitle}</p>
-      <a href={url}>
+      <a href={url} target="_blank">
         {" "}
         <p className="title">{title}</p>
       </a>
