@@ -60,7 +60,7 @@ const ContactForm = (props) => {
     if (formIsValid) {
       try {
         await axios.post(
-          "https://portfolio-backend-production-a00d.up.railway.app//send-email",
+          "https://portfolio-backend-production-a00d.up.railway.app/send-email",
           {
             name,
             email,
