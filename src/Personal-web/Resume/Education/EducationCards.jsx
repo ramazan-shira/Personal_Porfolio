@@ -23,15 +23,6 @@ const EducationCards = (props) => {
         <p className="profile">Bachelor in Business - Informatics</p>
         <p className="institution">University of Tirana</p>
       </div>
-      <div
-        className={
-          darkMode ? "education-card bg-1 dark" : "education-card bg-1 "
-        }
-      >
-        <p className="period">2023</p>
-        <p className="profile">Web Developer</p>
-        <p className="institution">Tirana ICT Academy</p>
-      </div>
     </div>
   );
 };
